@@ -1,0 +1,390 @@
+:root {
+    --green: #14c871;
+    --grey: #F9F9FA;
+    --blue: #206bfb;
+}
+
+@font-face {
+    font-family: ralway;
+    src: url(../fonts/extFonts/ralway.woff2);
+}
+
+@font-face {
+    font-family: openSans;
+    src: url(../fonts/extFonts/openSans.woff2);
+}
+
+* {
+    font-family: serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, p {
+    font-family: "ralway", sans-serif;
+    transition: 0.5s;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+}
+
+a {
+    color: var(--green);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+h4:hover {
+    color: var(--green) !important;
+}
+
+header {
+    height: 70vh;
+}
+header img {
+    animation-name: slide-top;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+}
+
+@keyframes slide-top {
+    0% {
+              transform: translateY(0);
+    }
+    100% {
+              transform: translateY(-100px);
+    }
+  }
+
+  
+@media (max-width: 991px) {
+    header img {
+        width: 85%;
+    }
+}
+
+nav .active1 {
+    color: var(--green);
+}
+
+nav li {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+nav .button {
+    border: 1px solid var(--grey);
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #3e4450;
+    font-weight: bold;
+}
+@media (max-width:977px){
+    header h1 {
+        font-size: 2rem;
+    }
+    header p {
+        font-size: 17px !important;
+    }
+}
+header p {
+    margin-bottom: 20px;
+    /* font-size: 2rem; */
+    line-height: 1;
+    color: #858EA1;
+    font-size: 24px;
+}
+
+header .row button {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 30px 10px 30px;
+    border-radius: 4px;
+    transition: 0.5s;
+    color: #fff;
+    background: #16df7e;
+    box-shadow: 0 8px 28px rgba(22, 223, 126, 0.45);
+}
+
+nav li .button {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 30px 10px 30px;
+    border-radius: 4px;
+    transition: 0.5s;
+    color: #868686;
+    background: white;
+    border: 1px solid #868686;
+
+}
+
+nav li .button:hover {
+    background-color: var(--blue);
+    color: white;
+}
+
+nav li a:hover {
+    color: var(--green) !important;
+}
+
+header i {
+    transition: .5s;
+    cursor: pointer;
+}
+
+header i:hover {
+    color: var(--green);
+}
+
+.feature .row .item {
+    background-color: var(--grey);
+}
+
+.feature .row .item i {
+    color: var(--green);
+}
+
+/***/
+.about i {
+    color: var(--green);
+    margin-right: 2px;
+}
+
+.about li {
+    font-size: 18px;
+}
+
+.about .about__cotent h1 {
+    font-size: 3rem;
+    color: var(--green);
+}
+
+.service {
+    background-color: var(--grey);
+}
+
+.service h2 {
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.service h2:hover {
+    color: var(--green) !important;
+}
+
+.service .service__content i {
+    color: var(--green);
+}
+
+.service span:first-child,
+.portfolio span:first-child,
+.testominals span:first-child,
+.team span:first-child,
+.contact span:first-child {
+    position: absolute;
+    color: #e8e8e8;
+    font-weight: bold;
+    left: 50%;
+    top: 1px;
+    transform: translate(-50%, -50%);
+    font-size: 300%;
+}
+
+.portfolio ul li .active1 {
+    color: var(--green);
+}
+
+.portfolio a {
+    transition: 0.5s;
+}
+
+.portfolio a:hover {
+    cursor: pointer;
+    color: var(--green) !important;
+}
+
+.testominals {
+    background-color: var(--grey);
+}
+
+.testominals img {
+    width: 60px !important;
+    margin: -60px 12px 7px 27px;
+    position: relative;
+}
+
+.testominals img+h3 {
+    width: 100%;
+    margin: -6px 12px 7px 27px;
+    /* position: relative; */
+}
+
+.testominals h3+p {
+    width: 60px !important;
+    margin: -10px 12px 7px 27px;
+    /* position: relative; */
+}
+
+.testominals .carousel-indicators {
+
+    margin: -30px;
+}
+
+.testominals .carousel-indicators button {
+    background-color: var(--green);
+    width: 10px;
+    height: 10px;
+}
+
+.call {
+    background-color: var(--green);
+}
+
+.team {
+    background-color: var(--grey);
+}
+
+.team p {
+    font-size: 10px;
+}
+
+.team i {
+    color: #858585;
+}
+
+.contact__details i {
+    color: var(--green);
+    font-size: 19px;
+    background: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.contact__details i:hover {
+background-color: var(--green);
+color: white;
+}
+.contact__details .item {
+    background-color: var(--grey);
+    border-top: 2px solid var(--green);
+    border-bottom: 2px solid var(--green);
+    padding: 20px;
+    height: 100%;
+}
+
+.contact__details .item h1 {
+    color: #5f687b;
+    font-size: 20px !important;
+}
+
+.contact__details .item p {
+    font-size: 12px !important;
+}
+
+.contact__details .btn {
+    background-color: var(--green);
+}
+
+.contact__details .btn:hover {
+    background-color: var(--blue);
+}
+
+footer {
+    background-color: var(--grey);
+}
+
+footer .icons i {
+    font-size: 18px;
+    display: inline-block;
+    background: rgb(234, 236, 239);
+    color: rgb(95, 104, 123);
+    line-height: 1;
+    padding: 8px 0px;
+    margin-right: 4px;
+    border-radius: 4px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+footer .icons i:hover {
+    background-color: var(--green);
+    color: white;
+
+}
+
+footer .btn {
+    background-color: var(--green);
+    height: 100%;
+    border-radius: 0 5px 5px 0;
+    height: auto;
+    position: absolute;
+    top: 0;
+}
+
+footer .btn:hover {
+    background-color: var(--blue);
+}
+
+footer input {
+    border: 1px solid #ebebeb;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+footer .bottom {
+    border-top: 1px solid #ebebeb;
+}
+
+footer .bottom span {
+    color: var(--green);
+
+}
+
+.circle_up {
+    background-color: var(--green);
+    height: 40px;
+    width: 40px;
+    bottom: 20px;
+    right: 7px;
+    border-radius: 3px;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+}
+
+.circle_up i {
+    width: 30px;
+
+
+}
